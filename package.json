@@ -1,0 +1,31 @@
+{
+  "name": "tasks-api",
+  "version": "1.0.0",
+  "description": "API REST de gestion de projets et taches",
+  "homepage": "https://github.com/somaiyassine/tasks-api#readme",
+  "bugs": {
+    "url": "https://github.com/somaiyassine/tasks-api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somaiyassine/tasks-api.git"
+  },
+  "license": "ISC",
+  "author": "Somai yassine, Ghaith Bejaoui",
+  "type": "commonjs",
+  "main": "src/server.js",
+  "scripts": {
+  "start": "node src/server.js",
+  "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
