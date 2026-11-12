@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 
-// هذي الدالة تعمل الاتصال بقاعدة البيانات MongoDB
+// el fonction hedhi ta3mel el connexion m3a el base de donnees MongoDB
 const connectDB = async () => {
   try {
-    // نستعملو الرابط اللي موجود في ملف .env
+    // nesta3mlou el lien elli mawjoud fel fichier .env
     await mongoose.connect(process.env.MONGO_URI);
     console.log('MongoDB connecté ✅');
   } catch (error) {
-    // كان صار مشكل في الاتصال نطلعو الغلطة ونوقفو البرنامج
+    // ken sar mochkol fel connexion ntal3ou el ghalta w nwa9fou el programme
     console.error('Erreur de connexion MongoDB:', error.message);
     process.exit(1);
   }
